@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjun Vijayaraja - Portfolio</title>
+    <link href="bootstrap-5.3.5-dist/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* Smooth scrolling */
+            scroll-padding-top: 80px;
+            /* Adjust this based on your navbar height */
+        }
+
+        body {
+            background-color: #121212;
+        }
+
+        .nav-item a,
+        .navbar div a:hover {
+            color: #4F46E5;
+            /* Change text color */
+            transform: scale(1.25);
+            transition: all ease-in 0.25s;
+        }
+
+        /* .navbar div a:hover{
+            color: #4F46E5;
+        } */
+        .carousel-item {
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: #1E1E1E;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 20px 0px 20px 0px;
+        }
+
+        .nav-item a,
+        .navbar div a {
+            color: #F5F5F5;
+        }
+
+        .section1,
+        .section4 {
+            height: calc(100vh - 90px);
+            width: 100%;
+            color: #D1D5DB;
+        }
+
+        .carousel-inner {
+            padding: 0 20% 0 20%;
+        }
+
+        .carousel-item p {
+            font-size: 25px;
+            white-space: normal;
+            /* Ensures text wraps */
+            word-wrap: break-word;
+            /* Breaks long words */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            /* filter: invert(100%); */
+            color: #D1D5DB;
+        }
+
+        .section2,
+        .section3 {
+            background-color: #121212;
+            padding: 0 5% 0 5%;
+        }
+
+        .section2 .card {
+            background-color: #1E1E1E;
+            min-height: 400px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+        }
+
+        .card-header h5 {
+            color: #F5F5F5;
+            ;
+        }
+
+        .projectIcons {
+            height: 5%;
+            width: 5%;
+        }
+
+        .card-body p {
+            color: #D1D5DB;
+        }
+
+        .projectLinks a {
+            text-decoration: none;
+            color: #6366F1;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .projectLinks a:hover {
+            color: #8B5CF6;
+            /* Slightly lighter on hover */
+            text-decoration: underline;
+        }
+
+        .section3 {
+            background-color: #121212;
+        }
+
+        td p {
+            margin-right: 10px;
+            margin-bottom: 0px;
+        }
+
+        td .card {
+            background-color: #2e2e2ed1;
+            font-weight: 500;
+            color: #F5F5F5;
+        }
+
+        tbody td {
+            vertical-align: middle;
+        }
+
+        tbody img {
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+        }
+
+        tbody p {
+            white-space: nowrap;
+        }
+
+        .section4 {
+            height: calc(100vh - 50vh);
+        }
+
+        .section4 a {
+            background-color: #2D2D2D;
+            color: #F5F5F5;
+        }
+
+        .section4 a:hover {
+            background-color: #6366F1;
+        }
+
+        .section5 {
+            background-color: #121212;
+            color: #F5F5F5;
+
+        }
+
+        .certification {
+            overflow-x: auto;
+        }
+
+        .certification::-webkit-scrollbar {
+            width: 0px;
+            /* Hides the scrollbar by making it invisible */
+            height: 0px;
+            /* If it's a horizontal scrollbar, this also hides it */
+        }
+
+        .certification-img {
+            width: 750px;
+            /* Set the width to 200px (or adjust as needed) */
+            height: 250px;
+            /* Optional: set a maximum height */
+            object-fit: contain;
+        }
+
+        .footer {
+
+            height: calc(100vh - 90vh);
+            align-items: flex-end;
+        }
+
+
+        #contact img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            border-radius: 30%;
+            /* border: #D1D5DB 5px;
+            border: 5px solid transparent; */
+        }
+
+        #contact img:hover {
+            /* border:#D1D5DB solid 5px; ; */
+            transform: scale(1.13);
+            transition: all ease-in 0.1s;
+
+        }
+
+        #contact {
+            padding: 5px;
+            background-color: #2D2D2D
+        }
+
+        section h4{
+            color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="#">Arjun Vijayaraja</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav d-flex justify-content-between ms-auto mb-lg-0 pe-5" style="width: 600px">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certification">Certification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="profile"
+            class="section1 d-flex justify-content-center align-items-center col-lg-12 col-md-8 col-sm-12 ">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h4><small>Hello</small> </h4>
+                        <h1>I'm
+                            <span><strong>Arjun Vijayaraja</strong></span>
+                        </h1>
+                        <h3>Software Developer</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <p>
+                            <strong>A results-driven Software Test Engineer</strong> with hands-on experience in
+                            <strong>Power BI</strong>, creating <strong>committee meeting dashboards</strong>, and
+                            contributing to <strong>development tasks</strong>.
+                            <strong>Recently certified in Java development from GUVI</strong>, I am now eager to
+                            transition into a full-time Java Developer role. Passionate about leveraging my
+                            problem-solving skills and technical expertise to build scalable solutions,
+                            I’m looking to align my career toward software development and further enhance my coding
+                            proficiency.
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="section2 col-lg-12 col-md-8 col-sm-12 d-flex justify-content-center">
+            <div class="projects d-flex justify-content-center flex-column align-items-center">
+                <div class="m-2">
+                    <h4 id="project"> PROJECTS</h4>
+                </div>
+                <div class="card col-lg-10">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="/resourses/icons/employeeManagementIcon.png" class="projectIcons me-4" alt="Icon"
+                            style="width: 30px; height: 30px; margin-right: 10px;">
+                        <h5 class="flex-grow-1">Employee Management Application</h5>
+                    </div>
+                    <div class="card-body align-content-center">
+                        <p>This is a Spring MVC project, we can manage employee data's. Like creating a new employee
+                            record, searching,
+                            updating and deleting a record.
+                            The database used in the is MySql. All the table operations are handled using JPA
+                            Repository.
+                        </p>
+                        <div>
+                            <h5>Tech used</h5>
+                            <p><strong>Frontend : </strong>Thymeleaf, html,css, bootstrap, javascript</p>
+                            <p><strong>Backend : </strong>Java, SpringBoot, Spring Data JPA</p>
+                            <p><strong>Database : </strong>MYSql</p>
+                        </div>
+                        <div class="projectLinks">
+                            <p><strong>GitHub : </strong><a
+                                    href="https://github.com/ArjunVijayaraja/MiniProject1-EmployeeManagementApplication.git">Click
+                                    to Explore and Download the Source Code!</a></p>
+                            <p><strong>Demo / ScreenShots : </strong><a
+                                    href="https://drive.google.com/file/d/1XWgntTQVXhp2au7PyETGCc2vmw9hpe3Q/view?usp=sharing">Curious
+                                    About How It Works? Check Out the Demo Video or Screenshots!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-10 ">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="/resourses/icons/medicalBookingIcon.png" class="projectIcons me-4" alt="Icon"
+                            style="width: 30px; height: 30px; margin-right: 10px;">
+                        <h5 class="flex-grow-1">Appointment Booking & Medication tracker</h5>
+                    </div>
+                    <div class="card-body align-content-center">
+                        <p>TThis is a Spring MVC project, where a patient can create an appointment.
+                            Once the Appointment is created they can also cancel the appointment. The user can create
+                            prescription by selecting the appointment Id and add, edit or remove medicines.
+                            The DB used is MySql, and all the DB operations are handled by JPA.
+                        </p>
+                        <div>
+                            <h5>Tech used</h5>
+                            <p><strong>Frontend : </strong>Thymeleaf, html,css, bootstrap, javascript</p>
+                            <p><strong>Backend : </strong>Java, SpringBoot, Spring Data JPA, Spring Security</p>
+                            <p><strong>Database : </strong>MYSql</p>
+                        </div>
+                        <div class="projectLinks">
+                            <p><strong>GitHub : </strong><a
+                                    href="https://github.com/ArjunVijayaraja/MiniProject2-AppointmentBooking-MedicinetrackerApplication.git">Click
+                                    to Explore and Download the Source Code!</a></p>
+                            <p><strong>Demo / ScreenShots : </strong><a
+                                    href="https://drive.google.com/file/d/1tsNFFlZFH6i49pHRzRsCMYc8J9wDoBcO/view?usp=sharing">Curious
+                                    About How It Works? Check Out the Demo Video or Screenshots!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-10">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="/resourses/icons/busTicketIcon.png" class="projectIcons me-4" alt="Icon"
+                            style="width: 30px; height: 30px; margin-right: 10px;">
+                        <h5 class="flex-grow-1">Bus Ticket Booking application</h5>
+                    </div>
+                    <div class="card-body align-content-center">
+                        <p>This is a Spring MVC-based project where users can easily book bus tickets and view their
+                            booking history.
+                            Admins have the ability to create new buses, manage bus trips, and view all scheduled trips.
+                            The system uses MySQL for database management, with all operations handled efficiently
+                            through JPA.
+                        </p>
+                        <div>
+                            <h5>Tech used</h5>
+                            <p><strong>Frontend : </strong>Thymeleaf, html,css, bootstrap, javascript</p>
+                            <p><strong>Backend : </strong>Java, SpringBoot, Spring Data JPA, Spring Security</p>
+                            <p><strong>Database : </strong>MYSql</p>
+                        </div>
+                        <div class="projectLinks">
+                            <p><strong>GitHub : </strong><a
+                                    href="https://github.com/ArjunVijayaraja/GUVI_BusTicketProject.git">Click
+                                    to Explore and Download the Source Code!</a></p>
+                            <p><strong>Demo / ScreenShots : </strong><a
+                                    href="https://drive.google.com/file/d/1iPPFxE3QeAQ6jY2hDFUe5ts3jTet-0Th/view?usp=sharings">Curious
+                                    About How It Works? Check Out the Demo Video or Screenshots!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills"
+            class="section3 col-lg-12 col-md-8 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="table-responsive  d-flex flex-column justify-content-center align-items-center">
+                <div class="m-2">
+                    <h4>Skills</h4>
+                </div>
+                <div class="col-lg-12 col-md-8 col-sm-12  p-2 align-content-center">
+                    <table class="table table-responsive table-bordered">
+                        <thead class="text-center table-primary">
+                            <th>Stack</th>
+                            <th>Tools</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Frontend Technology</td>
+                                <td>
+                                    <div class="d-flex flex-wrap gap-2"> <!-- Flex container for all items -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconThymeleaf.png">
+                                            <p class="card p-2 mb-0">Thymeleaf</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconHtml5.png">
+                                            <p class="card p-2 mb-0">HTML</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconCss3.png">
+                                            <p class="card p-2 mb-0">CSS</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/MaterialIconThemeJavascript.png">
+                                            <p class="card p-2 mb-0">Ecamscript-(Es5,Es6) [JavaScript]</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Backend Technology</td>
+                                <td class="text-wrap">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex">
+                                            <img src="resourses/icons/DeviconJava.png">
+                                            <p class="card p-2">Jakarta SE, Jakarta EE</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconSpring.png">
+                                            <p class="card p-2">Spring boot, Spring data JPA, Spring Security, Basics of
+                                                Microservices (Spring cloud), Spring MVC</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <p class="card p-2"> RESt API</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Database Technology</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/LogosMysql.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">MySql</p>
+                                        </div>
+                                        <div class="d-flex  align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconMicrosoftsqlserver.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">MS SQL</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconMongodbWordmark.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Basics of Mongo DB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dependency Management tools</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconMaven.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Maven</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Development tools</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/LogosIntellijIdea.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">IntelliJ</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconVscode.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">VS Code</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Testing</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconJunitWordmark (1).png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Mockito</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/LogosSelenium.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Selenium Basics</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/DeviconPostman.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Postman</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Visualization Tools</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/LogosMicrosoftPowerBi.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Poerr BI</p>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="resourses/icons/VscodeIconsFileTypeExcel2.png"
+                                                style="width: 40px; height: 40px;">
+                                            <p class="card p-2">Excel</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="resume" class="section4 col-lg-12 col-md-8 col-sm-12 d-flex justify-content-center">
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <p style="font-size: 30px;">Get to know me better - click below to download my resume.</p>
+                <a href="resourses/resume/ArjunVijayaraja_JavaResume.pdf" download class="btn">
+                    Download Resume
+                </a>
+            </div>
+        </section>
+        <section id="certification" class="section5 col-lg-12 col-md-8 col-sm-12">
+            <h3 class="m-2 text-center">CERTIFICATIONS</h3>
+            <div class=" certification d-flex p-2 pb-4">
+                <div>
+                    <img class="certification-img"
+                        src="/resourses/certifications/GuviCertification - M38942ia21oe0775Xw.png">
+                </div>
+                <div><img class="certification-img"
+                        src="/resourses/certifications/648a5537bbeb6e214fea5bc59285dc3d66f86534732b284495ec60e15eaf17ad.png">
+                </div>
+            </div>
+        </section>
+        <footer id="contact" class="footer col-lg-12 col-md-8 col-sm-12 d-flex p-3 justify-content-center">
+            <div class=" d-flex gap-5">
+                <div>
+                    <a href="www.linkedin.com/in/arjunvijayaraja" target="_blank">
+                        <img src="resourses/icons/DeviconLinkedin.png" alt="linkedInIcon">
+                    </a>
+
+                </div>
+                <div>
+                    <a href="https://github.com/ArjunVijayaraja" target="_blank">
+                        <img src="resourses/icons/MdiGithub.png" alt="gitHubIcon">
+                    </a>
+
+                </div>
+                <div>
+                    <a href="mailto:arjunvijayarajab@gmail.com" target="_blank">
+                        <img src="resourses/icons/SkillIconsGmailDark.png" alt="mailIcon">
+                    </a>
+
+                </div>
+                <div>
+                    <a href="tel:+919500646167" target="_blank">
+                        <img src="resourses/icons/ProiconsCall.png" alt="callIcon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
