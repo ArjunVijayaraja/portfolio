@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,18 +12,15 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
             /* Smooth scrolling */
             scroll-padding-top: 80px;
             /* Adjust this based on your navbar height */
         }
-
         body {
             background-color: #121212;
         }
-
         .nav-item a,
         .navbar div a:hover {
             color: #4F46E5;
@@ -32,14 +28,12 @@
             transform: scale(1.25);
             transition: all ease-in 0.25s;
         }
-
         /* .navbar div a:hover{
             color: #4F46E5;
         } */
         .carousel-item {
             width: 100%;
         }
-
         .navbar {
             background-color: #1E1E1E;
             position: sticky;
@@ -47,23 +41,19 @@
             z-index: 1000;
             padding: 20px 0px 20px 0px;
         }
-
         .nav-item a,
         .navbar div a {
             color: #F5F5F5;
         }
-
         .section1,
         .section4 {
             height: calc(100vh - 90px);
             width: 100%;
             color: #D1D5DB;
         }
-
         .carousel-inner {
             padding: 0 20% 0 20%;
         }
-
         .carousel-item p {
             font-size: 25px;
             white-space: normal;
@@ -71,129 +61,102 @@
             word-wrap: break-word;
             /* Breaks long words */
         }
-
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             /* filter: invert(100%); */
             color: #D1D5DB;
         }
-
         .section2,
         .section3 {
             background-color: #121212;
             padding: 0 5% 0 5%;
         }
-
         .section2 .card {
             background-color: #1E1E1E;
             min-height: 400px;
             margin-bottom: 18px;
             border-radius: 12px;
         }
-
         .card-header h5 {
             color: #F5F5F5;
             margin: 0px;
         }
-
         /* .projectIcons {
             height: 5%;
             width: 5%;
         } */
-
         .card-body p {
             color: #D1D5DB;
         }
-
         .card-body h5 {
             color: silver;
             text-decoration: underline;
-
         }
-
-
         .projectLinks a {
             text-decoration: none;
             color: #6366F1;
             transition: color 0.3s ease;
             font-weight: 500;
         }
-
         .card:hover {
             transform: translateY(-5px);
             transition: all 0.3s ease;
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
         }
-
         .projectLinks a:hover {
             color: #8B5CF6;
             /* Slightly lighter on hover */
             text-decoration: underline;
         }
-
         .section3 {
             background-color: #121212;
         }
-
         td p {
             margin-right: 10px;
             margin-bottom: 0px;
         }
-
         td .card {
             background-color: #2e2e2ed1;
             font-weight: 500;
             color: #F5F5F5;
         }
-
         tbody td {
             vertical-align: middle;
         }
-
         tbody img {
             height: 40px;
             width: 40px;
             object-fit: contain;
         }
-
         tbody p {
             white-space: nowrap;
         }
-
         skill-table {
             overflow-x: auto;
         }
-
         .section4 {
             height: calc(100vh - 50vh);
         }
-
         .section4 a {
             background-color: #2D2D2D;
             color: #F5F5F5;
         }
-
         .section4 a:hover {
             background-color: #6366F1;
         }
-
         .section5 {
             background-color: #121212;
             color: #F5F5F5;
         }
-
         .certification {
             overflow-x: auto;
-            
         }
-
         .certification::-webkit-scrollbar {
             width: 0px;
             /* Hides the scrollbar by making it invisible */
             height: 0px;
             /* If it's a horizontal scrollbar, this also hides it */
         }
-
         .certification-img {
             width: 750px;
             /* Set the width to 200px (or adjust as needed) */
@@ -201,12 +164,10 @@
             /* Optional: set a maximum height */
             object-fit: contain;
         }
-
         .footer {
             height: calc(100vh - 90vh);
             align-items: flex-end;
         }
-
         #contact img {
             width: 30px;
             height: 30px;
@@ -215,132 +176,127 @@
             /* border: #D1D5DB 5px;
             border: 5px solid transparent; */
         }
-
         #contact img:hover {
             /* border:#D1D5DB solid 5px; ; */
             transform: scale(1.13);
             transition: all ease-in 0.1s;
         }
-
         #contact {
             padding: 5px;
             background-color: #2D2D2D
         }
-
         section h4 {
             color: silver;
         }
-
-
         @media (max-width: 575.98px) {
             .navbar-nav {
                 align-items: start;
                 justify-content: center;
                 width: 100vw;
             }
-
             #profile {
                 height: calc(100vh - 50vh);
                 width: 100%;
                 color: #D1D5DB;
             }
-
             /* 
             #profile .carousel-item p,
             .section2 p {
                 font-size: 14px;
             } */
-
-            .item2 p , #resume p {
-                font-size: 12px;
-
-
+            .item2 p {
+                font-size: 10px;
             }
-
             .c1 h3,
             span,
             h2 {
                 white-space: nowrap;
             }
-
             .section2 h5 {
                 font-size: 17px;
             }
-
+            .card-header h5 {
+                font-size: 15px;
+            }
+            .card-body p {
+                font-size: 13px;
+            }
             tbody img {
                 height: 25px;
                 width: 25px;
                 object-fit: contain;
             }
-
-            tbody td, th{
+            tbody td,
+            th {
                 font-size: 13px;
             }
-
             table p {
                 font-size: 10px;
             }
-
-            #resume p, #resume a{
-                font-size: 15px;
+            #resume p,
+            #resume a {
+                font-size: 13px;
                 text-align: center;
             }
-
-            #contact img{
-                width: 15px;
-                height: 15px;
+            #contact img {
+                width: 20px;
+                height: 20px;
                 object-fit: contain;
             }
         }
-
-
-        @media(min-width : 576px) and (max-width : 998px) {
+        @media(min-width : 576px) and (max-width : 991px) {
+            .item2 p,
+            #resume p {
+                font-size: 12px;
+            }
             .navbar-nav {
                 align-items: start;
                 justify-content: center;
                 width: 100vw;
-
             }
-
             tbody img {
                 height: 25px;
                 width: 25px;
                 object-fit: contain;
-
             }
-
             table p {
                 font-size: 13px;
             }
-            #resume p, #resume a{
+            #resume p,
+            #resume a {
                 font-size: 20px;
                 text-align: center;
             }
+            #contact img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                border-radius: 30%;
+                /* border: #D1D5DB 5px;
+            border: 5px solid transparent; */
+            }
+            .footer {
+                height: calc(100vh - 85vh);
+                /* vertical-align: middle; */
+            }
         }
-
-        @media(min-width : 998px) {
+        @media(min-width : 992px) {
             .navbar-nav {
                 align-items: start;
                 justify-content: center;
                 width: 600px;
-
             }
-
-            #resume p{
+            #resume p {
                 font-size: 30px;
                 text-align: center;
             }
-
-            #resume a{
+            #resume a {
                 font-size: 16px;
                 text-align: center;
             }
-
         }
-
     </style>
 </head>
-
 <body>
     <div>
         <nav class="navbar navbar-expand-lg col-lg-12 co-sm-12 col-md-12">
@@ -504,13 +460,11 @@
                 </div>
             </div>
         </section>
-        <section id="skills"
-            class="section3 col-lg-12 col-md-12 col-sm-12  justify-content-center align-items-center">
+        <section id="skills" class="section3 col-lg-12 col-md-12 col-sm-12  justify-content-center align-items-center">
             <div class="m-2">
                 <h4 class="text-center">Skills</h4>
             </div>
             <div class="table-responsive  d-flex flex-column justify-content-center">
-                
                 <div class="skill-table col-lg-12 col-md-12 col-sm-12  p-2 align-content-center">
                     <table class="table table-bordered">
                         <thead class="text-center table-primary">
@@ -701,5 +655,4 @@
     </div>
     <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
